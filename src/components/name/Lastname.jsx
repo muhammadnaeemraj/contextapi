@@ -1,14 +1,14 @@
 import React from "react";
-import { FirstName } from "../../App";
+import { LastName } from "../../App";
 
 const Lastname = () => {
   return (
     <>
-      <FirstName.Consumer>
-        {(fname) => {
-          return <h5>{fname}</h5>;
+      <LastName.Consumer>
+        {(lname) => {
+          return <h5>My last name is {lname}</h5>;
         }}
-      </FirstName.Consumer>
+      </LastName.Consumer>
     </>
   );
 };
